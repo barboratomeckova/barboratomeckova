@@ -1,0 +1,370 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+    
+
+nav{
+  
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-transform: uppercase; 
+    font-weight: 900;
+}
+.logo span {
+    font-weight: 400;
+}
+
+
+
+.navigace{
+    background-color:white;
+}
+.navigace ul{
+    display: flex;
+    list-style: none;
+}
+
+
+.navigace ul a{
+    background-color:white;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  
+}
+
+.navigace ul li{
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solod white;
+}
+
+.navigace ul li:hover{
+    border-bottom: 2px solid black;
+}
+
+/* Hlavní sekce*/
+.hero{
+    position: relative;
+
+}
+.hero img{
+    width: 100%;
+}
+.hlavnísekce{
+    background-color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+padding: 1.5rem 2rem;
+
+}
+.hlavnísekce>h1{
+    font-size: 3rem;
+}
+.tlacitka{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+/* Tlačítka */
+.btn{
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+
+}
+.btn-primary{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+transition-duration: 0.3;
+}
+.btn-secondary{
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+transition-duration: 0.3;
+}
+.btn-primary:hover{
+    background-color: gray;
+    color: black;
+}
+.btn-secondary:hover{
+    background-color: black;
+    color: white;              
+}
+
+
+.btn-outline{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+   
+    
+} 
+
+/*o nás*/
+
+.o-nas{
+    display: flex;
+    align-items: center;
+}
+
+.o-nas > img{
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+
+}
+.o-nas>article > h2{
+    font-size: 3rem;
+
+}
+.o-nas > article {
+    padding: 2rem;
+    width: 50%;
+}
+/*call to action*/
+.call-to-action{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    
+}
+.call-to-action h2{
+    font-size: 2rem ;
+}
+.call-to-action-text{
+
+width: 70%;
+padding-right: 3rem;
+
+
+}
+
+/*náš tým*/
+.tym>h2 {
+    font-size: 3rem;
+    text-align:center;
+   
+}
+.row{
+    display: flex;
+
+}
+.clentymu{
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+
+}
+.clentymu img{
+    width: 100%;
+}
+
+/*projekty*/
+.projekty> h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.projekt{ 
+    display: flex;
+    margin: 1rem;
+
+
+}
+
+.projekt> img{
+    width: 40%;
+    object-fit: cover;
+
+}
+.projekt-text{
+    padding: 3rem;
+    
+}
+.projekty .row{
+    flex-direction: column;
+}
+.align-right{
+   text-align: right;
+}
+
+/* cenik*/
+.cenik{
+    background-color: black;
+    color: white;
+}
+.nejlepsi-cenik{
+    transform: scale(1.08 );
+}
+.cenik h2{
+    font-size: 3rem;
+    text-align: center;
+
+
+}
+
+.cenik .row{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cenik-plan {
+    width: 33%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+    padding-bottom: 2rem;
+
+
+
+}
+.cenik-plan h3{
+    font-size: 2rem;
+
+}
+.cenik-plan ul{
+    padding: 0;
+    list-style: none;
+
+}
+.cenik-plan ul li{
+   border: 1px solid grey;
+   padding: 1rem;
+   background-color: honeydew;
+
+}
+
+
+.ikona>p{
+    font-size: 5rem;
+margin: 3rem 0;
+}
+
+
+/*footer*/
+.footer ul a{
+    font-size: 1rem;
+    color: black;
+
+}
+.footer ul li{
+    padding-top:0.7rem ;
+}
+
+.footer .row{
+    align-items: center;
+}
+.footer-item{
+    width: 25%;
+
+}
+.footer-main-item{
+    width: 50%;
+}
+
+
+/*vseobecne*/
+.container{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shadow{
+    -webkit-box-shadow: 5px 8px 8px 2px rgba(0,0,0,0.75); 
+box-shadow: 5px 8px 8px 2px rgba(0,0,0,0.75);
+}
+
+.shadow-lg{
+    -webkit-box-shadow: 5px 8px 10px 2px rgba(150,150,150,0.75); 
+box-shadow: 5px 8px 10px 2px rgba(150,150,150,0.75);
+}
+
+.section-padding{
+   padding-top: 5rem; 
+   padding-bottom: 5rem;
+}
+
+@media(max-width:700px){
+    .container{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .navigace,
+  
+    .navigace ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+
+    }
+
+.hero img {
+    height: 800px ;
+    object-fit: cover;
+}
+.o-nas{
+flex-direction: column-reverse;
+}
+.o-nas img{
+    width: 100%;
+}
+
+
+
+.call-to-action{
+   padding:1rem 0;
+   text-align: center;
+   
+   flex-direction: column
+}
+.call-to-action-text{
+    width: 100%;
+    padding-right: 0;
+}
+.row{
+    flex-direction:column ;
+}
+.clentymu,
+.footer-item,
+.footer-main-item,
+.projekt img,
+.cenik-plan{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+
+.projekt {
+    flex-direction: column;
+
+}
+
+
+
+.align-right{
+    text-align: left;
+}
+.cenik .row{
+
+    width: 90%;
+    
+}
+.nejlepsi-cenik{
+    transform: scale(1);
+}
+.footer ul{
+        padding: 0;
+}
+
+}
